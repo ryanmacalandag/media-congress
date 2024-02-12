@@ -54,7 +54,7 @@ button {
   --col-primary-lighter: hsl(18, 73%, 86%);
   --col-primary-lightest: hsl(18, 73%, 95%);
   --col-primary-darker: hsl(18, 49%, 25%);
-  --col-primary-darkeest: hsl(18, 21%, 12%);
+  --col-primary-darkest: hsl(18, 21%, 12%);
 
   --col-secondary: hsl(272, 71%, 25%);
   --col-secondary-light: hsl(273, 68%, 85%);
@@ -191,7 +191,8 @@ header .toggle-button i.bx:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: url('/images/website-masthead-sydney-01.jpg') top center fixed;
+  background-color: var(--col-secondary-darker);
+  background: url('./images/website-masthead-sydney-01.jpg') top center fixed;
   padding-bottom: 4rem;
   background-size: cover;
   color: var(--col-white);
