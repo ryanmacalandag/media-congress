@@ -1,0 +1,15 @@
+form.form select
+{
+  font-weight: 400;
+  padding: .5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+form.form input
+{
+  font-weight: 400;
+  padding: .5rem;
+  border: none;
+  border-radius: 5px;
+}
