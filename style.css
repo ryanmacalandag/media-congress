@@ -242,7 +242,7 @@ header .toggle-button i.bx:hover {
   margin: 3rem auto;
 }
 
-#masthead-logos img {
+#masthead-logos > * {
   height: 100%;
 }
 
@@ -296,7 +296,7 @@ header .toggle-button i.bx:hover {
     flex-direction: column;
   }
 
-  #masthead-logos img {
+  #masthead-logos > * {
     width: 50%;
   }
 }
