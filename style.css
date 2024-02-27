@@ -147,11 +147,12 @@ header {
 }
 
 .logo {
-  /* padding: 3rem 0 0; */
+  width: fit-content;
 }
 
 .logo img {
   height: 5rem;
+  width: auto;
 }
 
 .socials .bx {
@@ -213,7 +214,7 @@ header .toggle-button i.bx:hover {
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--col-primary-darkest);
-  background: url('./images/website-masthead-sydney-01.jpg') top center fixed;
+  background: url('./images/website-masthead-sydney-01.jpg') bottom center fixed;
   background-size: cover;
   color: var(--col-white);
 
@@ -221,6 +222,7 @@ header .toggle-button i.bx:hover {
 
 .landing #masthead {
   margin-bottom: 0rem;
+  padding-bottom: 5rem;
 }
 
 #masthead .boxed.row {
@@ -280,6 +282,16 @@ header .toggle-button i.bx:hover {
   margin-bottom: 1rem;
 }
 
+.masthead-form form select {
+  background-color: white;
+  border: 0px;
+  border-radius: 0px;
+  display: inline-block;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  height: 2.5rem;
+}
+
 .masthead-form form label {
   text-transform: uppercase;
   font-weight: 700;
@@ -302,6 +314,10 @@ header .toggle-button i.bx:hover {
 
 
 @media screen and (max-width: 730px) {
+
+  .landing #masthead {
+    padding-bottom: 0;
+  }
 
   #masthead .boxed.row {
     margin-top: 1rem;
@@ -570,6 +586,40 @@ footer {
     margin: 0;
   }
 }
+
+/* Bottom */
+
+#bottom {
+  width: 100%;
+  position: relative;
+
+}
+
+#bottom img {
+  width: 100%;
+  position: absolute;
+  bottom: -9rem;
+}
+
+@media screen and (max-width: 1372px) {
+  
+  #bottom img {
+    bottom: -6rem;
+  }
+
+}
+
+@media screen and (max-width: 730px) {
+
+  #bottom {
+    width: 100%;
+  }
+
+  #bottom img {
+    bottom: 0rem;
+  }
+}
+
 
 /* Privacy Policy */
 
