@@ -38,6 +38,7 @@
 
     <header>
       <div class="logo"><img src="./images/accc-logo-reverse.svg" alt=""></div>
+      <div class="socials" ><a title="Follow us on Facebook" href="https://www.facebook.com/modernmessage2024/" target="_blank"><i class='bx bxl-facebook-circle'></i></a></div>
     </header>
 
     <div class="boxed row">
@@ -52,18 +53,60 @@
 
         <div class="dateline">🔥 28-30 August 2024 • The Miller Hotel, Sydney</div>
       
-        <div id="masthead-logos">
-          <img src="acbc-logo-lanscape-mono-reverse.svg" alt="">
-          <img src="acpa-logo-reverse.svg" alt="">
-          <img src="the-miller-sydney-logo.png" alt="">
-          <img src="cathnews-sub-landscape-reverse-white.svg" alt="">
-          <a href="mailto:media@catholic.org.au"><img src="sponsorship-available.png" alt=""></a>
-        </div>
+
       
       </div>
   
-      <div class="masthead-form">
+      <!-- <div class="masthead-form">
         <iframe id="form" width="100%" height="800px" src="https://agora.catholic.org.au/l/576423/2024-02-11/3wlxyr" frameborder="0"></iframe>
+      </div> -->
+
+      <div class="masthead-form">
+
+        <form action="./testform.html" method="get">
+          <h2>Join the congress mailing list to receive important updates.</h2>
+          
+          <label for="title">Title</label>
+          <select name="title" id="title">
+            <option value="">Select title</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Deacon">Deacon</option>
+            <option value="Father">Father</option>
+            <option value="Monsigneur">Monsigneur</option>
+            <option value="Bishop">Bishop</option>
+            <option value="Archbishop">Archbishop</option>
+            <option value="Cardinal">Cardinal</option>
+          </select>
+          <label for="signup">Name</label>
+          <input type="text" name="firstname" placeholder="First name">
+          <label for="signup">Name</label>
+          <input type="text" name="lastname" placeholder="Last name">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="name@company.org">
+          <label for="signup">Organisation</label>
+          <input type="text" name="organisation" placeholder="Your organisation">
+
+          <input type="submit" value="Join Mailing List" class="btn submit">
+
+          <a id="privacylink" href="./privacypolicy.html">Read the Privacy Policy</a>
+          
+        </form>
+      </div>
+
+    </div>
+
+    <div class="boxed col" id="sponsors">
+
+      <h3>Organisers and sponsors</h3>
+
+      <div id="sponsor-logos">
+        <a href="https://catholic.au" target="_blank"><img src="acbc-logo-lanscape-mono-reverse.svg" alt=""></a>
+        <a href="https://acpa.asn.au/" target="_blank"><img src="acpa-logo-reverse.svg" alt=""></a>
+        <a href="https://www.rydges.com/accommodation/sydney-nsw/the-miller-hotel/hotel-rooms/" target="_blank"><img src="the-miller-sydney-logo.png" alt=""></a>
+        <a href="https://cathnews.com" target="_blank"><img src="cathnews-sub-landscape-reverse-white.svg" alt=""></a>
+        <a href="mailto:media@catholic.org.au" target="_blank"><img src="sponsorship-available.png" alt=""></a>
       </div>
 
     </div>

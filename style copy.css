@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
 * {
@@ -82,7 +81,7 @@ button {
 section {
   display: flex;
   width: 100%;
-  padding: 0rem;
+  padding: 4rem 6rem;
 }
 
 .boxed {
@@ -114,10 +113,15 @@ section {
 }
 
 @media screen and (max-width: 1372px) {
-
+  section {
+    padding: 4rem;
+  }
 }
 
 @media screen and (max-width: 730px) {
+  section {
+    padding: 2rem;
+  }
 
   .row {
     flex-direction: column;
@@ -138,12 +142,11 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   gap: 2rem;
   width: 100%;
   background-color: transparent;
-  padding: 3rem 4rem 0rem;
 }
 
 .logo {
@@ -151,20 +154,7 @@ header {
 }
 
 .logo img {
-  height: 5rem;
-}
-
-.socials .bx {
-  font-size: 1.85rem;
-  color: var(--col-primary-lighter);
-  cursor: pointer;
-  opacity: 80%;
-  transition: 300ms;
-}
-
-.socials .bx:hover {
-  color: var(--col-primary-lighter);
-  opacity: 100%;
+  height: 6rem;
 }
 
 header .toggle-button i.bx {
@@ -180,25 +170,14 @@ header .toggle-button i.bx:hover {
   background-color: var(--col-primary-light);
 }
 
-@media screen and (max-width: 1280px) {
-  header {
-    padding: 2rem;
-  }
+@media screen and (max-width: 1372px) {
 
   .logo img {
     height: 4.5rem;
   }
-
-  .socials .bx {
-    font-size: 1.15rem;
-  }
 }
 
 @media screen and (max-width: 730px) {
-
-  header {
-    padding: 2rem;
-  }
 
   .logo img {
     height: 3rem;
@@ -212,11 +191,12 @@ header .toggle-button i.bx:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--col-primary-darkest);
+  background-color: var(--col-secondary-darker);
   background: url('./images/website-masthead-sydney-01.jpg') top center fixed;
+  padding-bottom: 4rem;
   background-size: cover;
   color: var(--col-white);
-
+  margin-bottom: 6rem;
 }
 
 .landing #masthead {
@@ -225,7 +205,7 @@ header .toggle-button i.bx:hover {
 
 #masthead .boxed.row {
   align-items: flex-start;
-  margin-top: 2rem;
+  margin-top: 3rem;
   gap: 3rem;
 }
 
@@ -233,15 +213,14 @@ header .toggle-button i.bx:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
-  padding: 0 2rem;
+  flex: 1 ;
 }
 
 .masthead-info h1 {
   font-size: 4rem;
   font-weight: 800;
   line-height: 4rem;
-  margin: 2rem 0 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .masthead-info .dateline {
@@ -254,11 +233,22 @@ header .toggle-button i.bx:hover {
   flex: 1;
 }
 
+#masthead-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem auto;
+}
+
+#masthead-logos > * {
+  height: 100%;
+}
+
 .masthead-form {
   width: 100%;
   max-width: 450px;
-  padding: 2.5rem 2rem 1rem;
-  background-color: var(--col-secondary);
 }
 
 .masthead-form form {
@@ -267,6 +257,7 @@ header .toggle-button i.bx:hover {
   gap: .5rem;
   font-family: var(--fnt-body);
   position: sticky;
+  margin-top: 2rem;
 }
 
 .masthead-form form h2 {
@@ -276,7 +267,7 @@ header .toggle-button i.bx:hover {
 .masthead-form form select, .masthead-form form input {
   border: none;
   padding: .65rem;
-  /* border-radius: .35rem; */
+  border-radius: .35rem;
   margin-bottom: 1rem;
 }
 
@@ -287,12 +278,11 @@ header .toggle-button i.bx:hover {
   font-size: .85rem;
 }
 
-.masthead-form form a.btn {
+.masthead-form form a.btn.submit {
   padding: 1rem 1.45rem;
-  margin-top: 1rem;
   border: 2px solid var(--col-primary-lighter);
   background-color: var(--col-primary);
-  border-radius: 0;
+  border-radius: .5rem;
   color: var(--col-white);
   text-transform: uppercase;
   font-size: .85rem;
@@ -302,13 +292,12 @@ header .toggle-button i.bx:hover {
 
 
 @media screen and (max-width: 730px) {
-
-  #masthead .boxed.row {
-    margin-top: 1rem;
+  #masthead-logos {
+    flex-direction: column;
   }
 
-  .masthead-form {
-    max-width: 100%;
+  #masthead-logos > * {
+    width: 50%;
   }
 }
 
@@ -338,6 +327,14 @@ header .toggle-button i.bx:hover {
 
 @media screen and (max-width: 730px) {
 
+  #masthead {
+    margin-bottom: 2.65rem;
+  }
+
+  #masthead .boxed.row {
+    flex-direction: column;
+  }
+
   .masthead-info h1 {
     font-size: 2.4rem;
     font-weight: 700;
@@ -357,53 +354,6 @@ header .toggle-button i.bx:hover {
     margin-bottom: 2rem;
   }
   
-}
-
-/* Logos */
-
-#sponsors {
-  padding: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-#sponsors h3 {
-  font-size: .85rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-}
-
-#sponsor-logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-#sponsor-logos > *:hover {
-  opacity: 70%;
-  transform: translateY(-7px)
-}
-
-#sponsor-logos > * {
-  height: 100%;
-  transition: 300ms;
-  width: 50%;
-}
-
-@media screen and (max-width: 730px) {
-
-  #sponsor-logos {
-    flex-wrap: wrap;
-  }
-
-  #sponsor-logos > * {
-    width: 38% !important;
-  }
-
 }
 
 /* Section Title Block */
@@ -493,12 +443,6 @@ input.signup {
   border-color: var(--col-primary-darker);
 }
 
-.btn.submit {
-  background-color: var(--col-primary);
-  padding: 1rem;
-  border-radius: 0;
-}
-
 /* Footer */
 
 footer {
@@ -569,24 +513,6 @@ footer {
   .btn {
     margin: 0;
   }
-}
-
-/* Privacy Policy */
-
-#privacylink {
-  color: var(--col-primary-light);
-  font-size: .7rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: 300ms;
-  border-bottom: 1px dotted var(--col-primary-light);
-  padding-bottom: .35rem;
-  margin: .5rem auto 1rem;
-  width: fit-content;
-}
-
-#privacylink:hover {
-  color: var(--col-primary-lighter);
 }
 
 /* Boxicons  */

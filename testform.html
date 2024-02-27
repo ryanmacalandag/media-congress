@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Form</title>
+</head>
+<body>
+
+  <h1>Hello, <span id="fullname"></span>!</h1>
+  
+</body>
+
+<script>
+
+  let params = new URL(document.location).searchParams;
+  let title = params.get("title");
+  let fname = params.get("firstname");
+  let lname = params.get("lastname");
+  let full = `${title} ${fname} ${lname}`;
+
+  const fullName = document.querySelector('#fullname');
+  fullName.innerHTML = full;
+
+</script>
+
+
+</html>
