@@ -14,18 +14,33 @@
 
 // Menu toggle
 
-const topMenu = document.querySelector('#top-menu');
+// const topMenu = document.querySelector('#top-menu');
 // const menuOpen = document.querySelector('#menu-open');
 // const menuClose = document.querySelector('#menu-close');
 
-function openMenu() {
-  console.log(topMenu)
-  topMenu.classList.remove('hidden');
-}
+// function openMenu() {
+//   console.log(topMenu)
+//   topMenu.classList.remove('hidden');
+// }
 
-function closeMenu() {
-  topMenu.classList.add('hidden');
-}
+// function closeMenu() {
+//   topMenu.classList.add('hidden');
+// }
 
 // menuOpen.addEventListener('click', openMenu);
 // menuClose.addEventListener('click', closeMenu);
+
+const bg1 = document.querySelector('.bg1');
+const mastHead = document.querySelector('#masthead');
+const sponsors = document.querySelector('#sponsors');
+let mastHeadHeight = mastHead.offsetHeight;
+
+bg1.setAttribute("style",`height:${mastHeadHeight}px`);
+
+window.addEventListener('scroll', (e) => {
+  console.log(window.scrollY);
+  let move = window.scrollY * .5;
+  mastHeadHeight = mastHead.offsetHeight - move;
+  bg1.setAttribute("style", `top:${move}px; height:${mastHeadHeight}px`);
+  sponsors.setAttribute("style", `margin-top:${move * .2}px; opacity:${move * .4}%`);
+}) 
