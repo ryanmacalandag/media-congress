@@ -146,6 +146,11 @@ header {
   padding: 3rem 4rem 0rem;
 }
 
+.inside header {
+  background-color: var(--col-primary);
+  padding: 3rem 4rem 2rem;
+}
+
 .logo {
   width: fit-content;
 }
@@ -195,10 +200,14 @@ header .toggle-button i.bx:hover {
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 840px) {
 
   header {
     padding: 2rem;
+  }
+
+  .inside header {
+    padding: 2rem 2rem 1rem;
   }
 
   .logo img {
