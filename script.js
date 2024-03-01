@@ -32,15 +32,15 @@
 
 const bg1 = document.querySelector('.bg1');
 const mastHead = document.querySelector('#masthead');
-const sponsors = document.querySelector('#sponsors');
+// const sponsors = document.querySelector('#sponsors');
 let mastHeadHeight = mastHead.offsetHeight;
 
 bg1.setAttribute("style",`height:${mastHeadHeight}px`);
 
 window.addEventListener('scroll', (e) => {
   console.log(window.scrollY);
-  let move = window.scrollY * .5;
+  let move = window.scrollY * .85;
   mastHeadHeight = mastHead.offsetHeight - move;
   bg1.setAttribute("style", `top:${move}px; height:${mastHeadHeight}px`);
-  sponsors.setAttribute("style", `margin-top:${move * .2}px; opacity:${move * .4}%`);
+  // sponsors.setAttribute("style", `margin-top:${move * .2}px; opacity:${move * .4}%`);
 }) 
